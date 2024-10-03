@@ -1,0 +1,32 @@
+.Main_Nav {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    gap: 10vw;
+    margin-left: 10vw;
+}
+
+.Name {
+    font-family: Hurricane;
+    font-size: 68px;
+    font-weight: 400;
+    line-height: 93.84px;
+    text-align: left;
+    color: rgba(0, 0, 0, 1);
+}
+
+.Wishes_Banner {
+    display: flex;
+    gap: 3vw;
+    margin-top:-1vw;
+}
+
+.Wishes_Banner p {
+    font-family: IM FELL French Canon SC;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 29.27px;
+    text-align: left;
+    color: rgba(0, 0, 0, 1);
+    cursor: pointer;
+}

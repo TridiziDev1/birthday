@@ -1,8 +1,6 @@
 /* Birthday Section */
 .birthday-section {
-    text-align: center;
-    padding: 50px;
-    background-color: #d3cce3;
+  background: linear-gradient(280.28deg, #CFC7D6 0.3%, #9597C1 98.77%);
   }
   
   .birthday-circle {

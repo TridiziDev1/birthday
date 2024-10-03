@@ -222,7 +222,7 @@ const CountdownSection = () => {
   const [isBlastTime, setIsBlastTime] = useState(false);
 
   useEffect(() => {
-    const countdownDate = new Date("Oct 5, 2024 00:00:00").getTime();
+    const countdownDate = new Date("Oct 3, 2024 22:07:00").getTime();
 
     const interval = setInterval(() => {
       const now = new Date().getTime();
