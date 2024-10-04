@@ -10,10 +10,10 @@ import Navbar from './componets/NavBar/Navbar';
 function App() {
   return (
    <>
-     {/* <CountdownSection/> */}
+     <CountdownSection/>
    {/* <BirthdaySection/> */}
     {/* <Box/> */}
-   <MessageSection/>
+   {/* <MessageSection/> */}
    {/* <LastWishesSection/> */}
    </>
   );

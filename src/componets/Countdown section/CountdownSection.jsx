@@ -319,7 +319,7 @@ const CountdownSection = () => {
             <div className='gift-container'>
               <Box />
             </div>
-            {/* <div>
+            <div className='h2-container'>
               <h2 className='h2' style={{fontSize:"1rem"}}>
                 <span style={{ '--i': 1 }}>H</span>
                 <span style={{ '--i': 2 }}>a</span>
@@ -335,7 +335,25 @@ const CountdownSection = () => {
                 <span style={{ '--i': 12 }}>a</span>
                 <span style={{ '--i': 13 }}>y</span>
               </h2>
-            </div> */}
+              </div>
+              <div className='h2-container1'>
+              <h2 className='h2' style={{fontSize:"1rem"}}>
+                <span style={{ '--i': 14 }}>S</span>
+                <span style={{ '--i': 15 }}>a</span>
+                <span style={{ '--i': 16 }}>n</span>
+                <span style={{ '--i': 17 }}>d</span>
+                <span style={{ '--i': 18 }}>e</span>
+                <span style={{ '--i': 19,  }}>e</span>
+                <span style={{ '--i': 20 }}>p</span>
+                <span style={{ '--i': 21 ,marginLeft: '3vw'}}>s</span>
+                <span style={{ '--i': 22 }}>i</span>
+                <span style={{ '--i': 23 }}>r</span>
+                {/* <span style={{ '--i': 11 }}>D</span>
+                <span style={{ '--i': 12 }}>a</span>
+                <span style={{ '--i': 13 }}>y</span> */}
+              </h2>
+            </div>
+             
           </>
       }
     </section>

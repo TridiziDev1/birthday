@@ -1,11 +1,9 @@
-
-
 .box {
-    position: absolute;
-    /* margin: 50px; */
-  }
- 
-  /* .box::before {
+  position: absolute;
+  /* margin: 50px; */
+}
+
+/* .box::before {
     content: "";
     width: 440px;
     height: 440px;
@@ -17,130 +15,220 @@
     transform: translate(-50%, -50%);
     border-radius: 50%;
   } */
-  
-  .box-body {
-    position: relative;
-    height: 200px;
-    width: 200px;
-    margin-top: 123.3333333333px;
-    background-color: #cc231e;
-    border-bottom-left-radius: 5%;
-    border-bottom-right-radius: 5%;
-    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.3);
-    background: linear-gradient(#762c2c, #ff0303);
-    transition: all 0.5s; /* Ensure smooth transition */
-  }
-  
-  .box-body .img {
-    opacity: 0;
-    transform: translateY(0%);
-    transition: all 0.5s;
-    margin: 0 auto;
-    display: block;
-  }
-  
-  .box-body.open {
-    cursor: pointer;
-    animation: box-body 1s forwards ease-in-out;
-  }
-  
-  .box-body.open .img {
-    opacity: 1;
-    z-index: 0;
-    /* transform: translateY(-150px); */
-    transform: translateY(-100px);
-    width: 10vw;
-    height: 3vw;
-  }
-  
-  .box-body.open .box-lid {
-    animation: box-lid 1s forwards ease-in-out;
-  }
-  
-  .box-lid {
-    position: absolute;
-    z-index: 1;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 90%;
-    height: 40px;
-    background-color: #cc231e;
-    width: 220px;
-    border-radius: 5%;
-    box-shadow: 0 8px 4px -4px rgba(0, 0, 0, 0.3);
-  }
-  
-  .box-bowtie {
-    z-index: 1;
-    height: 100%;
+
+.box-body {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  margin-top: 123.3333333333px;
+  background-color: #cc231e;
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(#762c2c, #ff0303);
+  transition: all 0.5s;
+  /* Ensure smooth transition */
+}
+
+.box-body .btn {
+  opacity: 0;
+  transform: translateY(0%);
+  transition: all 0.5s;
+  margin: 0 auto;
+  display: block;
+  border: none;
+  outline: none;
+  border-radius: 18px;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* .btn {
+  margin: 100px;
+  padding: 15px 40px;
+  border: none;
+  outline: none;
+  color: #FFF;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 12px;
+} */
+
+.btn::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* background: linear-gradient(135deg, #BD3675, #01F6EE); */
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+  color: #FFF;
+  background: transparent;
+}
+
+/* glow */
+.btn::before {
+  content: "";
+  background: linear-gradient(45deg,
+          #FF0000, #FF7300, #FFFB00, #48FF00,
+          #00FFD5, #002BFF, #FF00C8, #FF0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 600%;
+  z-index: -1;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  filter: blur(8px);
+  animation: glowing 20s linear infinite;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+  opacity: 1;
+}
+
+@keyframes glowing {
+  0% {
+      background-position: 0 0;
   }
 
-  .box-body::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    width: 50px;
-    background: linear-gradient(#ffffff,#ffefa0)
-  }
-  
-  /* Include other animations you have already defined below */
-  
-  @keyframes box-body {
-    0% {
-      transform: translate3d(0%, 0%, 0) rotate(0deg);
-    }
-    25% {
-      transform: translate3d(0%, 25%, 0) rotate(20deg);
-    }
-    50% {
-      transform: translate3d(0%, -15%, 0) rotate(0deg);
-    }
-    70% {
-      transform: translate3d(0%, 0%, 0) rotate(0deg);
-    }
-  }
-  
-  @keyframes box-lid {
-    0%,
-    42% {
-      transform: translate3d(-50%, 0%, 0) rotate(0deg);
-    }
-    60% {
-      transform: translate3d(-85%, -230%, 0) rotate(-25deg);
-    }
-    90%,
-    100% {
-      transform: translate3d(-119%, 225%, 0) rotate(-70deg);
-    }
+  50% {
+      background-position: 400% 0;
   }
 
+  100% {
+      background-position: 0 0;
+  }
+}
 
-  .box-lid {
-    position: absolute;
-    z-index: 1;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    bottom: 90%;
-    height: 40px;
-    background-color: #cc231e;
-    height: 40px;
-    width: 220px;
-    border-radius: 5%;
-    box-shadow: 0 8px 4px -4px rgba(0, 0, 0, 0.3);
+/* hover */
+/* .btn:hover::before {
+  opacity: 1;
+} */
+
+/* .btn:hover:after {
+  background: transparent;
+} */
+
+.btn:hover {
+  color: white;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.box-body.open {
+  cursor: pointer;
+  animation: box-body 1s forwards ease-in-out;
+}
+
+.box-body.open .btn {
+  opacity: 1;
+  z-index: 0;
+  /* transform: translateY(-150px); */
+  transform: translateY(-100px);
+  width: 10vw;
+  height: 3vw;
+}
+
+.box-body.open .box-lid {
+  animation: box-lid 1s forwards ease-in-out;
+}
+
+.box-lid {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 90%;
+  height: 40px;
+  background-color: #cc231e;
+  width: 220px;
+  border-radius: 5%;
+  box-shadow: 0 8px 4px -4px rgba(0, 0, 0, 0.3);
+}
+
+.box-bowtie {
+  z-index: 1;
+  height: 100%;
+}
+
+.box-body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 50px;
+  background: linear-gradient(#ffffff, #ffefa0)
+}
+
+/* Include other animations you have already defined below */
+
+@keyframes box-body {
+  0% {
+    transform: translate3d(0%, 0%, 0) rotate(0deg);
   }
-  .box-lid::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    width: 50px;
-    background: linear-gradient(#ffefa0,#fff)
+
+  25% {
+    transform: translate3d(0%, 25%, 0) rotate(20deg);
   }
+
+  50% {
+    transform: translate3d(0%, -15%, 0) rotate(0deg);
+  }
+
+  70% {
+    transform: translate3d(0%, 0%, 0) rotate(0deg);
+  }
+}
+
+@keyframes box-lid {
+
+  0%,
+  42% {
+    transform: translate3d(-50%, 0%, 0) rotate(0deg);
+  }
+
+  60% {
+    transform: translate3d(-85%, -230%, 0) rotate(-25deg);
+  }
+
+  90%,
+  100% {
+    transform: translate3d(-119%, 225%, 0) rotate(-70deg);
+  }
+}
+
+
+.box-lid {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: 90%;
+  height: 40px;
+  background-color: #cc231e;
+  height: 40px;
+  width: 220px;
+  border-radius: 5%;
+  box-shadow: 0 8px 4px -4px rgba(0, 0, 0, 0.3);
+}
+
+.box-lid::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 50px;
+  background: linear-gradient(#ffefa0, #fff)
+}
