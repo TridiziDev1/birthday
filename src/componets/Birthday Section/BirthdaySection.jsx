@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./BirthdaySection.css";
 import Navbar from "../NavBar/Navbar";
-import Icon from "../../assets/Ellipse 1436.png";
+import IconsEle from "../../assets/Ellipse.png";
 import flowers from "../../assets/image 2874.png";
 import ballon from "../../assets/image (1).png";
 
@@ -58,7 +58,7 @@ const BirthdaySection = () => {
     <section className="birthday_section">
       <Navbar />
       <div className="birthday_circle">
-        <img src={Icon} alt="container_flower" className="container_flower" />
+        <img src={IconsEle} alt="container_flower" className="container_flower" />
         <div>
           <img src={flowers} alt="flower" className="flower" />
           <div className="Wishes_text_container">
