@@ -220,7 +220,6 @@ import Box from '../Box/Box';
 const CountdownSection = () => {
   const [timeLeft, setTimeLeft] = useState({});
   const [isBlastTime, setIsBlastTime] = useState(false);
-
   useEffect(() => {
     const countdownDate = new Date("Oct 3, 2024 22:07:00").getTime();
 
@@ -317,7 +316,7 @@ const CountdownSection = () => {
               <img src={cake} alt='' />
             </div>
             <div className='gift-container'>
-              <Box />
+              <Box/>
             </div>
             <div className='h2-container'>
               <h2 className='h2' style={{fontSize:"1rem"}}>

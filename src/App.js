@@ -6,16 +6,20 @@ import MessageSection from './componets/Message Section/MessageSection';
 import LastWishesSection from './componets/Last Wishes Section/LastWishesSection';
 import Box from './componets/Box/Box';
 import Navbar from './componets/NavBar/Navbar';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './Page/Home';
 
 function App() {
   return (
-   <>
-     <CountdownSection/>
-   {/* <BirthdaySection/> */}
-    {/* <Box/> */}
-   {/* <MessageSection/> */}
-   {/* <LastWishesSection/> */}
-   </>
+    <>
+      <CountdownSection />
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<CountdownSection />} />
+          <Route path='/home' element={<Home />} />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 
