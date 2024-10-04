@@ -210,7 +210,7 @@
 //   )
 // }
 
-import React from "react";
+import React,{useRef, useEffect} from "react";
 import "./LastWishesSection.css";
 import whatsaapWall from "../../assets/WhatsAppWall.png";
 import whatsaapWall2 from "../../assets/WhatsApp wall2.png";
@@ -227,22 +227,42 @@ import image5 from "../../assets/image5.jpg";
 import image6 from "../../assets/image6.jpg";
 import image7 from "../../assets/image7.jpg";
 import newImg from '../../assets/newImg.jpg';
-import familyImg from '../../assets/familyImg.jpg'
+import familyImg from '../../assets/familyImg.jpg';
+import audioFile from '../../assets/butta-bomma.mp3';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 // import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import { useGSAP } from "@gsap/react";
+import { useR } from 'react';
 gsap.registerPlugin(ScrollTrigger);
 
 export default function LastWishesSection() {
-  // const layoutTwoAnimation = gsap.timeline({
-  //     scrollTrigger: {
-  //       trigger: "#pagetwo",
-  //       start: "45% 95%",
-  //       end: "55% 60%",
-  //       scrub: true,
-  //       markers: false, // Uncomment to see debugging markers
-  //     },
+  
+      const audioRef1 = useRef(null);
+  
+    const playAudio = () => {
+      audioRef1.current.play();
+    };
+  
+    const pauseAudio = () => {
+      audioRef1.current.pause();
+  };
+  useEffect(() => {
+    ScrollTrigger.create({
+      trigger: ".grid-box",
+      start: "top 50%", // When the second page enters the viewport
+      onEnter: () => {
+        audioRef1.current.play();
+      },
+      onLeave: () => {
+        audioRef1.current.pause();
+      },
+      onLeaveBack: () => {
+        audioRef1.current.pause(); // Pause when scrolling back up
+      }
+    });
+  })
+
   useGSAP(() => {
     
     
@@ -273,8 +293,13 @@ export default function LastWishesSection() {
   });
   return (
     <>
-    <section id="memory">
-      <div className="grid-box">
+      <section id="memory">
+{/*       
+      <button onClick={playAudio}>Play</button>
+      <button onClick={pauseAudio}>Pause</button> */}
+         <audio ref={audioRef1} src={audioFile} />
+        <div className="grid-box">
+          
         <div className="grid-container">
           <div className="small">
             <img
