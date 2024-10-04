@@ -1,8 +1,14 @@
+/* #memory {
+  margin-top: 60px;
+} */
 .grid-box {
+  margin-top: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 91vh;
+  height: 110vh;
+  overflow: hidden;
+  width: 100vw;
 }
 
 .grid-container {
@@ -361,6 +367,8 @@
 /* animation code  */
 
 .last-wish-container {
+  width: 100vw;
+  /* overflow-x: hidden; */
   display: flex;
   flex-direction: column;
   align-items: center;

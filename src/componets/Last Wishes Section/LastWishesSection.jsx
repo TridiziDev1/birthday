@@ -250,8 +250,8 @@ export default function LastWishesSection() {
       scrollTrigger: {
         trigger: ".grid-box",
         start: "40% 30%",
-        end: "55% 60%",
-        // scrub: true,
+        end: "85% 50%",
+        scrub: true,
         markers: false, // Uncomment to see debugging markers
       },
     });
