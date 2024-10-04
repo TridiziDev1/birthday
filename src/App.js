@@ -14,8 +14,8 @@ function App() {
      <CountdownSection/>
    
     {/* <Box/> */}
-   <MessageSection/>
-   <LastWishesSection/>
+   {/* <MessageSection/> */}
+   {/* <LastWishesSection/> */}
    </>
   );
 }

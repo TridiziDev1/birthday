@@ -15,7 +15,7 @@ const Box = () => {
             <div className="col-12 mt-5 d-flex justify-content-center">
                 <div className={`box ${isOpen ? "open" : ""}`} onClick={handleClick}>
                     <div className={`box-body ${isOpen ? "open" : ""}`}>
-                        <button className="img" onClick={()=>alert("hello")}>Click Here</button>
+                        <button className="btn" onClick={()=>alert("hello")}>Click Here</button>
                         {/* <img className="img" src="https://via.placeholder.com/150" alt="Placeholder" /> */}
                         <div className="box-lid"></div>
                         <div className="box-bowtie"></div>
