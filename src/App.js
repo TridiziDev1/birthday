@@ -14,9 +14,8 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-        <Route path="/" element={<CountdownSection/>} />
-          {/* <Route path="/" element={<CountdownSection />} /> */}
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<CountdownSection/>} />
+          <Route path="/home" element={<Home/>} />
         </Routes>
       </BrowserRouter>
     </>
