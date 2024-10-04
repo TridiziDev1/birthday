@@ -5,6 +5,7 @@ import CountdownSection from './componets/Countdown section/CountdownSection';
 import MessageSection from './componets/Message Section/MessageSection';
 import LastWishesSection from './componets/Last Wishes Section/LastWishesSection';
 import Box from './componets/Box/Box';
+import Navbar from './componets/NavBar/Navbar';
 
 function App() {
   return (

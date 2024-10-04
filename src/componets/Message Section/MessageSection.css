@@ -1,10 +1,10 @@
-.message-section {
+/* .message-section {
     text-align: center;
     padding: 40px;
     background-color: #faf0e6;
-  }
-  
-  .message-section .message {
+  } */
+
+/* .message-section .message {
     font-size: 18px;
     color: #444;
     max-width: 800px;
@@ -46,4 +46,59 @@
     font-size: 16px;
     color: #999;
     margin-top: 10px;
-  }
+  } */
+
+
+.message-section {
+  height: 100vh;
+  background: linear-gradient(280.28deg, #CFC7D6 0.3%, #9597C1 98.77%);
+  display: flex;
+  position: relative;
+  width: 100%;
+  align-items: center;
+}
+
+.image-grid img:nth-child(1) {
+  width: 45vw;
+  height: 50vw;
+  margin-top: -1vw;
+}
+
+.image-grid img:nth-child(2) {
+  position: absolute;
+  z-index: 10;
+  top: 25vw;
+  right: 2vw;
+}
+
+.image-grid img:nth-child(3) {
+  position: absolute;
+  z-index: 10;
+  top: 5vw;
+  right: 20vw;
+}
+
+
+.h1-title {
+  position: absolute;
+  z-index: 10;
+  top: 12vw;
+  right: 5vw;
+  font-family: IM FELL Double Pica SC;
+  font-size: 40px;
+  font-weight: 400;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.h1-title-1 {
+  position: absolute;
+  z-index: 10;
+  top: 30vw;
+  right: 22vw;
+  font-family: IM FELL Double Pica SC;
+  font-size: 40px;
+  font-weight: 400;
+  text-align: left;
+  color: #FFFFFF;
+}

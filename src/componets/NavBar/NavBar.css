@@ -1,0 +1,72 @@
+.Main_Nav {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    gap: 15vw;
+    margin-left: 12vw;
+    overflow: hidden;
+}
+
+.Name {
+    font-family: "Brush Script MT", cursive;
+    font-size: 5vw;
+    font-weight: 400;
+    line-height: 93.84px;
+    text-align: left;
+    color: rgba(0, 0, 0, 1);
+}
+
+.Wishes_Banner {
+    display: flex;
+    gap: 3vw;
+    margin-top:-1vw;
+}
+
+.Wishes_Banner p {
+    font-family: IM FELL French Canon SC;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 29.27px;
+    text-align: left;
+    color: rgba(0, 0, 0, 1);
+    cursor: pointer;
+}
+.Wishes_Banner p:hover{
+   text-decoration: underline;
+}
+
+.Wishes_text span, .Wishes_text_cont span {
+    opacity: 0;
+    animation: appear 0.5s forwards;
+  }
+  
+  @keyframes appear {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Optionally, add a slight bounce to the text */
+  .Wishes_text span, .Wishes_text_cont span {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: bounceIn 2s infinite;
+  }
+  
+  @keyframes bounceIn {
+    0% {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    60% {
+      opacity: 1;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  
