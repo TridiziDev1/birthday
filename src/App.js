@@ -9,10 +9,10 @@ import Box from './componets/Box/Box';
 function App() {
   return (
    <>
-     <CountdownSection/>
+     {/* <CountdownSection/> */}
    {/* <BirthdaySection/> */}
     {/* <Box/> */}
-   {/* <MessageSection/> */}
+   <MessageSection/>
    {/* <LastWishesSection/> */}
    </>
   );
