@@ -12,10 +12,10 @@ function App() {
    <>
   
    <BirthdaySection/>
-     <CountdownSection/>
-    <Box/>
-   <MessageSection/>
-   <LastWishesSection/>
+     {/* <CountdownSection/> */}
+    {/* <Box/> */}
+   {/* <MessageSection/> */}
+   {/* <LastWishesSection/> */}
    </>
   );
 }
