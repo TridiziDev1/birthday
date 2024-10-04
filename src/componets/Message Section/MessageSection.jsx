@@ -16,8 +16,8 @@ const MessageSection = () => {
           the heart of our team. Thank you for always looking out for us and
           making work feel like a second home. May your birthday be filled with
           laughter, great food (we know you love it!), and all the happiness you
-          deserve. Cheers to many more years of your leadership and that
-          one-of-a-kind spirit! 🎂🎈{" "}
+          deserve. Cheers to many more years of your leadership and <span>that
+          one-of-a-kind spirit! 🎂🎈{" "}</span>
         </p>
       </div>
       <div className="image-grid">
