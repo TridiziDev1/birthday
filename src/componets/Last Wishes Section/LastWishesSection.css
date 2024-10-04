@@ -1,7 +1,9 @@
-.grid-box{
+.grid-box {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100vh;
+  margin: 20px 0;
 }
 
 .grid-container {
@@ -14,7 +16,6 @@
 .grid-container div {
   border: 2px solid #ccc;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-
 }
 
 /* Image styling */
@@ -25,163 +26,163 @@
 }
 
 /* Positioning items to form the heart shape */
-.grid-container> :nth-child(1) {
+.grid-container > :nth-child(1) {
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2;
 }
 
-.grid-container> :nth-child(2) {
+.grid-container > :nth-child(2) {
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 2;
 }
 
-.grid-container> :nth-child(3) {
+.grid-container > :nth-child(3) {
   grid-column-start: 5;
   grid-column-end: 7;
   grid-row-start: 1;
   grid-row-end: 3;
 }
 
-.grid-container> :nth-child(4) {
+.grid-container > :nth-child(4) {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 3;
 }
 
-.grid-container> :nth-child(5) {
+.grid-container > :nth-child(5) {
   grid-column-start: 2;
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 4;
 }
 
-.grid-container> :nth-child(6) {
+.grid-container > :nth-child(6) {
   grid-column-start: 4;
   grid-column-end: 5;
   grid-row-start: 2;
   grid-row-end: 3;
 }
 
-.grid-container> :nth-child(7) {
+.grid-container > :nth-child(7) {
   grid-column-start: 7;
   grid-column-end: 8;
   grid-row-start: 2;
   grid-row-end: 3;
 }
 
-.grid-container> :nth-child(8) {
+.grid-container > :nth-child(8) {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 3;
   grid-row-end: 4;
 }
 
-.grid-container> :nth-child(9) {
+.grid-container > :nth-child(9) {
   grid-column-start: 4;
   grid-column-end: 5;
   grid-row-start: 3;
   grid-row-end: 4;
 }
 
-.grid-container> :nth-child(10) {
+.grid-container > :nth-child(10) {
   grid-column-start: 5;
   grid-column-end: 7;
   grid-row-start: 3;
   grid-row-end: 5;
 }
 
-.grid-container> :nth-child(11) {
+.grid-container > :nth-child(11) {
   grid-column-start: 7;
   grid-column-end: 8;
   grid-row-start: 3;
   grid-row-end: 4;
 }
 
-.grid-container> :nth-child(12) {
+.grid-container > :nth-child(12) {
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 4;
   grid-row-end: 5;
 }
 
-.grid-container> :nth-child(13) {
+.grid-container > :nth-child(13) {
   grid-column-start: 3;
   grid-column-end: 5;
   grid-row-start: 4;
   grid-row-end: 6;
 }
 
-.grid-container> :nth-child(14) {
+.grid-container > :nth-child(14) {
   grid-column-start: 5;
   grid-column-end: 6;
   grid-row-start: 5;
   grid-row-end: 6;
 }
 
-.grid-container> :nth-child(15) {
+.grid-container > :nth-child(15) {
   grid-column-start: 4;
   grid-column-end: 5;
   grid-row-start: 6;
   grid-row-end: 7;
 }
-.standing1{
+.standing1 {
   width: 14.8vw;
-  height:14.7vw;
-  object-fit: cover; 
+  height: 14.7vw;
+  object-fit: cover;
   object-position: center;
 }
-.shaving{
+.shaving {
   width: 6.9vw;
   height: 7vw;
 }
-.chair{
+.chair {
   width: 14.8vw;
   height: 15vw;
-  object-fit: cover; 
+  object-fit: cover;
   object-position: center;
 }
-.chairHeadset{
+.chairHeadset {
   width: 6.9vw;
   height: 7vw;
 }
-.instagram{
+.instagram {
   width: 6.9vw;
   height: 7vw;
 }
-.smile2{
+.smile2 {
   width: 6.9vw;
-  height: 7vw; 
+  height: 7vw;
 }
-.image1{
+.image1 {
   width: 6.9vw;
-  height: 7vw; 
+  height: 7vw;
 }
-.image2{
+.image2 {
   width: 6.9vw;
-  height: 7vw;  
+  height: 7vw;
 }
-.image3{
+.image3 {
   width: 6.9vw;
-  height: 7vw;  
+  height: 7vw;
 }
-.image4{
+.image4 {
   width: 14.8vw;
   height: 15vw;
 }
-.image5{
+.image5 {
   width: 6.9vw;
   height: 7vw;
 }
-.image6{
+.image6 {
   width: 6.9vw;
   height: 7vw;
 }
-.image7{
+.image7 {
   width: 6.9vw;
   height: 7vw;
 }
@@ -265,8 +266,7 @@
 }
  */
 
-
- /* Continuous zoom animation for cards */
+/* Continuous zoom animation for cards */
 @keyframes zoomInOut {
   0% {
     transform: scale(1) translateY(0); /* Initial state */
@@ -357,4 +357,42 @@
 
 .grid-container > :nth-child(15) {
   animation-delay: 3s;
+}
+
+/* animation code  */
+
+.last-wish-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.last-wish-container h1 {
+  font-family: "IM FELL Double Pica SC";
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 50px;
+}
+.last-wish-container .lastWishes-line-2 {
+  background: linear-gradient(8.91deg, #9597c0 11.92%, #46475a 71.35%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* padding-bottom: 18px; */
+}
+.newImg {
+  width: 100%;
+  /* background-size: cover; */
+}
+.last-con-name {
+  font-family: "Hurricane";
+  font-weight: 400;
+  line-height: 93.84px;
+  font-size: 40px;
+  color: rgba(78, 79, 101, 1);
+}
+.tridizi-box {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-right: 50px;
 }

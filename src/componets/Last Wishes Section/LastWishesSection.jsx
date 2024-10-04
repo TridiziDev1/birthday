@@ -226,6 +226,8 @@ import image4 from "../../assets/image4.jpg";
 import image5 from "../../assets/image5.jpg";
 import image6 from "../../assets/image6.jpg";
 import image7 from "../../assets/image7.jpg";
+import newImg from '../../assets/newImg.jpg';
+import familyImg from '../../assets/familyImg.jpg'
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 // import { MotionPathPlugin } from "gsap/MotionPathPlugin";
@@ -247,22 +249,27 @@ export default function LastWishesSection() {
     const textAnimation = gsap.timeline({
       scrollTrigger: {
         trigger: ".grid-box",
-        start: "50% 10%",
-        end: "65% 70%",
-        scrub: true,
+        start: "40% 30%",
+        end: "55% 60%",
+        // scrub: true,
         markers: false, // Uncomment to see debugging markers
       },
     });
-    gsap.from(".lastWishes-line-1", {
+    textAnimation.from(".lastWishes-line-1", {
       x: -800,
       duration: 4,
       // ease: "power2.out",
-    });
+    }, "same");
 
-    gsap.from(".lastWishes-line-2", {
+    textAnimation.from(".lastWishes-line-2", {
       x: 1200,
       duration: 4,
-    });
+    }, "same");
+    textAnimation.from(".last-con-name", {
+      // opacity:0,
+      y:  300,
+      duration: 4,
+    }, "same");
   });
   return (
     <>
@@ -286,7 +293,9 @@ export default function LastWishesSection() {
               className="standing1 animated-image"
             />
           </div>
-          <div className="small">4</div>
+            <div className="small">
+              <img  src={familyImg} />
+          </div>
           <div className="large">
             <img src={whatsaapWall} alt="" />
           </div>
@@ -316,7 +325,7 @@ export default function LastWishesSection() {
             <img src={image6} className="image6 animated-image" alt="" />
           </div>
           <div className="small">
-            <img src={whatsaapChair} className="chair animated-image" alt="" />
+            <img  src={newImg} className="newImg chair animated-image" alt="" />
           </div>
           <div className="small">
             <img src={image7} className="image7 animated-image" alt="" />
@@ -336,8 +345,12 @@ export default function LastWishesSection() {
           MORE<span className="last-span-21"> HAPPY </span>
           <span className="last-span-22">RETURNS OF THE </span>{" "}
           <span className="last-span-23">DAY</span>{" "}
-        </h1>
-      </div>
+          </h1>
+          <h2 className="last-con-name" >Hari Sai Sandeep</h2>
+        </div>
+        <div className="tridizi-box" >
+          <h2>-From your well wishing Development team</h2>
+        </div>
       </section>
     </>
   );
