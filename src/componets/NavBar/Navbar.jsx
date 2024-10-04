@@ -6,7 +6,7 @@ function Navbar() {
     <div className='Main_Nav'>
         <p className='Name'>Sandeep</p>
         <div className='Wishes_Banner'>
-            <p>Wishes</p>
+            {/* <p>Wishes</p> */}
             <p>About B’day Star</p>
             <p>Memory Line</p>
         </div>
