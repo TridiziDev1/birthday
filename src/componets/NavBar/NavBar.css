@@ -22,7 +22,7 @@
     margin-top:-1vw;
 }
 
-.Wishes_Banner p {
+.Wishes_Banner a {
     font-family: IM FELL French Canon SC;
     font-size: 25px;
     font-weight: 400;
@@ -30,9 +30,10 @@
     text-align: left;
     color: rgba(0, 0, 0, 1);
     cursor: pointer;
+    text-decoration: none;
 }
-.Wishes_Banner p:hover{
-   text-decoration: underline;
+.Wishes_Banner a:hover{
+   text-decoration: none;
 }
 
 .Wishes_text span, .Wishes_text_cont span {
