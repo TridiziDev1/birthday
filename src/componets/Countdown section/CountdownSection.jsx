@@ -231,7 +231,8 @@ const CountdownSection = () => {
         clearInterval(interval);
         setIsBlastTime(true);
         triggerConfettiBlast();
-        // speakBirthdayWishes();  // Call the function to speak birthday wishes
+         playCelebrationAudio(); 
+        speakBirthdayWishes();  // Call the function to speak birthday wishes
       } else {
         setTimeLeft({
           days: Math.floor(distance / (1000 * 60 * 60 * 24)),
@@ -282,6 +283,11 @@ const CountdownSection = () => {
 
     // Speak the birthday wishes
     window.speechSynthesis.speak(utterance);
+  };
+
+   const playCelebrationAudio = () => {
+    const audio = new Audio(celebrationAudio);
+    audio.play();
   };
 
   return (
