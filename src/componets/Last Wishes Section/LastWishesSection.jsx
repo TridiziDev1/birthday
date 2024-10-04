@@ -227,7 +227,8 @@ import image5 from "../../assets/image5.jpg";
 import image6 from "../../assets/image6.jpg";
 import image7 from "../../assets/image7.jpg";
 import newImg from '../../assets/newImg.jpg';
-import familyImg from '../../assets/familyImg.jpg'
+// import familyImg from '../../assets/familyImg.jpg'
+import familyImg from '../../assets/familyImg.jpg';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 // import { MotionPathPlugin } from "gsap/MotionPathPlugin";
