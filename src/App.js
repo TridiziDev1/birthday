@@ -10,10 +10,10 @@ function App() {
   return (
    <>
      <CountdownSection/>
-   {/* <BirthdaySection/> */}
+   <BirthdaySection/>
     {/* <Box/> */}
-   {/* <MessageSection/> */}
-   {/* <LastWishesSection/> */}
+   <MessageSection/>
+   <LastWishesSection/>
    </>
   );
 }
