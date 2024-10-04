@@ -1,36 +1,116 @@
 /* Birthday Section */
-.birthday-section {
+.birthday_section {
   background: linear-gradient(280.28deg, #CFC7D6 0.3%, #9597C1 98.77%);
+  overflow: hidden;
+}
+
+.birthday_circle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: 1.5vw;
+}
+
+.flower {
+  position: absolute;
+  top: 2vw;
+  left: 7vw;
+}
+.flower {
+  width: 300px; /* Adjust size as needed */
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Create a floating effect with @keyframes */
+@keyframes float {
+  0% {
+    transform: translateX(0);
   }
-  
-  .birthday-circle {
-    background-color: #fff;
-    border-radius: 50%;
-    width: 300px;
-    height: 300px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  50% {
+    transform: translateX(-20px); /* Move hearts up by 20px */
   }
-  
-  .birthday-circle h1 {
-    font-size: 32px;
-    font-weight: bold;
-    margin: 0;
-    color: #8a2be2;
+  100% {
+    transform: translateX(0px);
   }
-  
-  .birthday-circle .date {
-    font-size: 24px;
-    margin: 10px 0;
-    color: #6a5acd;
+}
+
+.Wishes_text_container {
+  position: absolute;
+  top: 10vw;
+  left: 7vw;
+  text-align: center;
+}
+
+.Wishes_text {
+  font-family: IM FELL Double Pica SC;
+  font-size: 4.8vw;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+
+}
+.Wishes_text_cont{
+  font-family: IM FELL Double Pica SC;
+  font-size: 6.2vw;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+}
+.ballon_img{
+  height: 40vw;
+  width: 18vw;
+  margin-top: -2vw;
+  animation: ballon 2s linear;
+}
+@keyframes ballon {
+  0%{
+    transform: translateY(100px);
   }
-  
-  .birthday-circle .wish {
-    font-size: 16px;
-    margin-top: 15px;
-    color: #4b0082;
+  50%{
+    transform: translateY(50px);
   }
+  100%{
+    transform: translateY(0);
+  }
+}
+.wishes_text_mainn{
+  text-align: center;
+  animation: text 2s linear;
+}
+@keyframes text {
+  0%{
+    transform:scale(0) rotate(120deg);
+  }
+  50%{
+    transform: scale(.5) rotate(240deg);
+  }
+  100%{
+    transform: scale(1) rotate(360deg);
+
+  }
+}
+.wishes_text_mainn p{
+font-family: Ingrid Darling;
+font-size: 2.6vw;
+font-weight: 400;
+line-height: 60.32px;
+color: rgba(0, 0, 0, 1);
+position: relative;
+left: 5vw;
+margin-left: 0vw;
+/* font-family: 'Cursive', sans-serif; */
+font-family: "Brush Script MT", cursive;
+}
+.container_flower{
+  animation: contaner 2s linear ;
+}
+@keyframes contaner {
+  0%{
+    transform: translateY(-100px);
+  }
+  50%{
+    transform: translateY(-50px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
