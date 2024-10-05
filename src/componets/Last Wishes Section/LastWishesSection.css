@@ -383,6 +383,7 @@
 .last-wish-container .lastWishes-line-2 {
   background: linear-gradient(8.91deg, #9597c0 11.92%, #46475a 71.35%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   /* padding-bottom: 18px; */
 }

@@ -132,6 +132,7 @@
   transform: translateY(-100px);
   width: 10vw;
   height: 3vw;
+  cursor: pointer;
 }
 
 .box-body.open .box-lid {

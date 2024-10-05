@@ -245,10 +245,10 @@
 
 @keyframes moveLeft {
   0% {
-    transform: translateX(100vw);
+    transform: translateY(100vw);
   }
   100% {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 
@@ -259,9 +259,9 @@
 
 @keyframes moveRight {
   0% {
-    transform: translateX(-100vw);
+    transform: translateY(-100vw);
   }
   100% {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }

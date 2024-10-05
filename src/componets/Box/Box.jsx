@@ -16,7 +16,7 @@ const Box = () => {
             <div className="col-12 mt-5 d-flex justify-content-center">
                 <div className={`box ${isOpen ? "open" : ""}`} onClick={handleClick}>
                     <div className={`box-body ${isOpen ? "open" : ""}`}>
-                        <Link to={"/home"}><button className="btn">Click Here</button></Link>
+                        <Link style={{textDecoration:"none"}} to={"/home"}><button className="btn">Click Here</button></Link>
                         {/* <img className="img" src="https://via.placeholder.com/150" alt="Placeholder" /> */}
                         <div className="box-lid"></div>
                         <div className="box-bowtie"></div>
